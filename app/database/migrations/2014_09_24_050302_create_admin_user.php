@@ -21,10 +21,10 @@ class CreateAdminUser extends Migration {
 
 		$user = new User;
 
-		$user->email 		= 'jamesduffy0@gmail.com';
+		$user->email 		= 'admin@turlockcitybooze.com';
 		$user->password 	= Hash::make('Mj)gV2^d6mfD%3FuVsG7');
-		$user->first_name 	= 'James';
-		$user->last_name 	= 'Duffy';
+		$user->first_name 	= 'TCB';
+		$user->last_name 	= 'Admin';
 
 		$user->save();
 	}
