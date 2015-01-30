@@ -1,0 +1,269 @@
+// Core variables and mixins
+@import "bootstrap-3.2.0/variables.less";
+@import "bootstrap-3.2.0/mixins.less";
+
+// Reset and dependencies
+@import "bootstrap-3.2.0/normalize.less";
+@import "bootstrap-3.2.0/print.less";
+//@import "bootstrap-3.2.0/glyphicons.less";
+
+// Core CSS
+@import "bootstrap-3.2.0/scaffolding.less";
+@import "bootstrap-3.2.0/type.less";
+@import "bootstrap-3.2.0/code.less";
+@import "bootstrap-3.2.0/grid.less";
+@import "bootstrap-3.2.0/tables.less";
+@import "bootstrap-3.2.0/forms.less";
+@import "bootstrap-3.2.0/buttons.less";
+
+// Components
+@import "bootstrap-3.2.0/component-animations.less";
+@import "bootstrap-3.2.0/dropdowns.less";
+@import "bootstrap-3.2.0/button-groups.less";
+@import "bootstrap-3.2.0/input-groups.less";
+@import "bootstrap-3.2.0/navs.less";
+@import "bootstrap-3.2.0/navbar.less";
+//@import "bootstrap-3.2.0/breadcrumbs.less";
+@import "bootstrap-3.2.0/pagination.less";
+@import "bootstrap-3.2.0/pager.less";
+@import "bootstrap-3.2.0/labels.less";
+@import "bootstrap-3.2.0/badges.less";
+@import "bootstrap-3.2.0/jumbotron.less";
+@import "bootstrap-3.2.0/thumbnails.less";
+@import "bootstrap-3.2.0/alerts.less";
+@import "bootstrap-3.2.0/progress-bars.less";
+@import "bootstrap-3.2.0/media.less";
+@import "bootstrap-3.2.0/list-group.less";
+@import "bootstrap-3.2.0/panels.less";
+@import "bootstrap-3.2.0/responsive-embed.less";
+@import "bootstrap-3.2.0/wells.less";
+@import "bootstrap-3.2.0/close.less";
+
+// Components w/ JavaScript
+@import "bootstrap-3.2.0/modals.less";
+@import "bootstrap-3.2.0/tooltip.less";
+@import "bootstrap-3.2.0/popovers.less";
+@import "bootstrap-3.2.0/carousel.less";
+
+// Utility classes
+@import "bootstrap-3.2.0/utilities.less";
+@import "bootstrap-3.2.0/responsive-utilities.less";
+
+/*!
+ *  Font Awesome 4.2.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+@import "font-awesome-4.2.0/variables.less";
+@import "font-awesome-4.2.0/mixins.less";
+@import "font-awesome-4.2.0/path.less";
+@import "font-awesome-4.2.0/core.less";
+@import "font-awesome-4.2.0/larger.less";
+@import "font-awesome-4.2.0/fixed-width.less";
+@import "font-awesome-4.2.0/list.less";
+@import "font-awesome-4.2.0/bordered-pulled.less";
+@import "font-awesome-4.2.0/spinning.less";
+@import "font-awesome-4.2.0/rotated-flipped.less";
+@import "font-awesome-4.2.0/stacked.less";
+@import "font-awesome-4.2.0/icons.less";
+
+// Google Fonts
+@import url(http://fonts.googleapis.com/css?family=Lato|Oswald);
+
+body {
+	background: #eee;
+	font-family: 'Lato', sans-serif;
+	font-size: 14px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Oswald', sans-serif;
+}
+
+h5 {
+	margin-bottom: 0px;
+	margin-top: 1.2em;
+}
+
+.container {
+	padding-left: 0px;
+	padding-right: 0px;
+	max-width: 1000px;
+}
+
+.img-responsive {
+	width: 100%;
+}
+
+.inner-padding {
+	padding: 10px;
+}
+
+.venue-tiles {
+	
+}
+
+small, .small {
+	font-size: 75%;
+}
+
+.jumbotron {
+	margin-bottom: 0px;
+	border-radius: 0px;
+
+	background:
+		linear-gradient(
+			to right,
+			rgba(0,0,0,.80) 0%,
+			rgba(0,0,0,0.76) 38%,
+			rgba(255,255,255,0) 100%),
+			url('/img/beer-header.jpg');
+
+	background-size: cover;
+	background-repeat: no-repeat;
+    background-position: center; 
+
+	h1 a,
+	h1 a:active,
+	h1 a:hover, {
+		font-size: 40px;
+		color: #f2f2f2;
+		text-decoration: none;
+
+		i {
+			font-size: 46px;
+		}
+	}
+
+	p {
+		color: #f2f2f2;
+		font-size: 24px;
+	}
+
+}
+
+.container .jumbotron {
+	border-radius: 0px;
+}
+
+.navbar {
+	border-radius: 0px;
+	border-width: 0px;
+	
+}
+
+.featured-image {
+	width: 300px;
+	max-width: 100%;
+	float: right;
+	margin: 0 10px 10px 0;
+}
+
+.page-header {
+	margin-top: 15px;
+	padding-left: 15px;
+
+	h1 {
+		font-size: 32px;
+	}
+}
+
+.main-container {
+	background: #fff;
+
+	.container;
+}
+
+.main-content {
+	border-left: 1px solid #eee;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+.share-buttons {
+	border-bottom: 1px solid #eee;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	line-height: 10px;
+}
+
+a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
+	text-decoration: none;
+}
+
+.sidebar {
+	border-left: 1px solid #d8d8d8;
+}
+
+.monospace-field {
+	background: #EBF0F2;
+	font-family: Consolas, monospace;
+	border: none;
+	border-radius: 0px;
+	font-size: 1.5em;
+	min-height: 450px;
+}
+
+.panel {
+	margin-top: 20px;
+}
+
+.media {
+	border-bottom: 1px solid #eee;
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+	color: @text-color;
+	text-decoration: none;
+
+	.media-body {
+		
+	}
+}
+
+.no-image-placeholder {
+	width: 100%;
+	text-align: center;
+	padding: 5px;
+	font-size: 60px;
+	color: darkgray;
+}
+
+footer {
+	padding: 25px 0 20px;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) {
+	footer {
+		ul.nav {
+			display: inline-block;
+
+			li {
+				float: left;
+			}
+		}
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) {
+	.media h3 {
+		margin-top: 0px;
+	}
+
+	.no-image-placeholder,
+	.media .feature-image {
+		margin-right: 15px;
+		width: 200px;
+
+		.pull-left;
+	}
+
+	
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) {
+
+}
